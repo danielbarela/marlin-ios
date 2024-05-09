@@ -11,7 +11,7 @@ import MapKit
 struct MarlinMainMap: View {
     @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     @EnvironmentObject var routeRepository: RouteRepository
-    @EnvironmentObject var asamsTileRepository: AsamsTileRepository
+    @EnvironmentObject var asamsTileRepository: AsamsTileRepository2
     @EnvironmentObject var modusTileRepository: ModusTileRepository
     @EnvironmentObject var portsTileRepository: PortsTileRepository
     @EnvironmentObject var lightsTileRepository: LightsTileRepository

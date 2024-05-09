@@ -68,7 +68,7 @@ struct RouteMapView: View {
     @StateObject var itemList: BottomSheetItemList = BottomSheetItemList()
 
     @EnvironmentObject var routeRepository: RouteRepository
-    @EnvironmentObject var asamsTileRepository: AsamsTileRepository
+    @EnvironmentObject var asamsTileRepository: AsamsTileRepository2
     @EnvironmentObject var modusTileRepository: ModusTileRepository
     @EnvironmentObject var portsTileRepository: PortsTileRepository
     @EnvironmentObject var lightsTileRepository: LightsTileRepository
@@ -103,7 +103,7 @@ struct RouteMapView: View {
         .onAppear {
             mixins.mixins.append(RouteMixin(viewModel: routeViewModel))
             mixins.addRouteMixin(routeRepository: routeRepository)
-            mixins.addAsamTileRepository(tileRepository: asamsTileRepository)
+//            mixins.addAsamTileRepository(tileRepository: asamsTileRepository)
             mixins.addModuTileRepository(tileRepository: modusTileRepository)
             mixins.addPortTileRepository(tileRepository: portsTileRepository)
             mixins.addLightTileRepository(tileRepository: lightsTileRepository)

@@ -153,7 +153,7 @@ struct MarlinApp: App {
     var routeRepository: RouteRepository
     var routeWaypointRepository: RouteWaypointRepository
 
-    var asamsTileRepository: AsamsTileRepository
+    var asamsTileRepository: AsamsTileRepository2
     var modusTileRepository: ModusTileRepository
     var portsTileRepository: PortsTileRepository
     var lightsTileRepository: LightsTileRepository
@@ -229,7 +229,7 @@ struct MarlinApp: App {
             publicationRepository: publicationRepository
         )
 
-        asamsTileRepository = AsamsTileRepository(localDataSource: asamRepository.localDataSource)
+        asamsTileRepository = AsamsTileRepository2(localDataSource: asamRepository.localDataSource)
         modusTileRepository = ModusTileRepository(localDataSource: moduRepository.localDataSource)
         portsTileRepository = PortsTileRepository(localDataSource: portRepository.localDataSource)
         lightsTileRepository = LightsTileRepository(localDataSource: lightRepository.localDataSource)

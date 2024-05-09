@@ -7,10 +7,7 @@
 
 import Foundation
 import MapKit
-import CoreData
 import Kingfisher
-import sf_proj_ios
-import sf_ios
 
 class MapBoundingBox: Codable, ObservableObject {
     @Published var swCorner: (x: Double, y: Double)

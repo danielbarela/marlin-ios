@@ -8,9 +8,10 @@
 import Foundation
 import UIKit
 import SwiftUI
+import DataSourceDefinition
 
 extension DataSources {
-    class AsamDefinition: DataSourceDefinition {
+    class AsamDefinition: DataSourceDefinition, DataSourceDefinition2 {
         var filterable: Filterable? = AsamFilterable()
         var mappable: Bool = true
         var color: UIColor = .black

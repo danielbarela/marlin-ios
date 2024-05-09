@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -513,6 +513,7 @@
 		F7AFF9432AD46C6B00555960 /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFF9422AD46C6B00555960 /* RouteViewModel.swift */; };
 		F7AFF9452AD8718900555960 /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFF9442AD8718900555960 /* Filterable.swift */; };
 		F7B349132849212B00E10ABF /* Asam.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B349112849212B00E10ABF /* Asam.swift */; };
+		F7B55C822BA34E8200E62B8E /* TileRepository in Frameworks */ = {isa = PBXBuildFile; productRef = F7B55C812BA34E8200E62B8E /* TileRepository */; };
 		F7B7064328BAADD50026DE88 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B7064228BAADD50026DE88 /* CircleImage.swift */; };
 		F7B84E202A72C83B00640C76 /* Bookmark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B84E1F2A72C83B00640C76 /* Bookmark+CoreDataClass.swift */; };
 		F7B84E222A72DEB200640C76 /* BookmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B84E212A72DEB200640C76 /* BookmarkButton.swift */; };
@@ -1215,6 +1216,7 @@
 		F7AFF9422AD46C6B00555960 /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
 		F7AFF9442AD8718900555960 /* Filterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filterable.swift; sourceTree = "<group>"; };
 		F7B349112849212B00E10ABF /* Asam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asam.swift; sourceTree = "<group>"; };
+		F7B55C7E2BA33C3F00E62B8E /* UIImageExtensions */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UIImageExtensions; sourceTree = "<group>"; };
 		F7B7064228BAADD50026DE88 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		F7B84E1F2A72C83B00640C76 /* Bookmark+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F7B84E212A72DEB200640C76 /* BookmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkButton.swift; sourceTree = "<group>"; };
@@ -1329,6 +1331,8 @@
 		F7E768B629EF11CC001EFFFF /* NAVTEXTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NAVTEXTextParser.swift; sourceTree = "<group>"; };
 		F7E8C89D28946C8900E7CCE2 /* RailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailItem.swift; sourceTree = "<group>"; };
 		F7E8C89F2894701C00E7CCE2 /* DataSourceRail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceRail.swift; sourceTree = "<group>"; };
+		F7E990292BA24632009B4E4F /* TileRepository */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TileRepository; sourceTree = "<group>"; };
+		F7E9902A2BA246CF009B4E4F /* DataSourceDefinition */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DataSourceDefinition; sourceTree = "<group>"; };
 		F7EB1B0D2A0D7FC200D1433B /* SFGeometryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFGeometryExtensions.swift; sourceTree = "<group>"; };
 		F7EFFEBE2A7C0F300097E5EF /* DataSourceSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceSummaryView.swift; sourceTree = "<group>"; };
 		F7EFFEC02A7C0FC80097E5EF /* BookmarkNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkNotes.swift; sourceTree = "<group>"; };
@@ -1397,6 +1401,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B55C822BA34E8200E62B8E /* TileRepository in Frameworks */,
 				F730DFC42A99000D0051775C /* GeoJSON in Frameworks */,
 				7982FB9B536447055E423E94 /* libPods-Marlin.a in Frameworks */,
 				F7FFB33428D8A58D00C31AA3 /* ExceptionCatcher in Frameworks */,
@@ -2482,6 +2487,9 @@
 		F7A54CA22848149500E5F565 = {
 			isa = PBXGroup;
 			children = (
+				F7B55C7E2BA33C3F00E62B8E /* UIImageExtensions */,
+				F7E9902A2BA246CF009B4E4F /* DataSourceDefinition */,
+				F7E990292BA24632009B4E4F /* TileRepository */,
 				F7E768B129EECAE9001EFFFF /* Resources */,
 				F7FFB33728D9EB6800C31AA3 /* CHANGELOG.md */,
 				F713616928B79D0B0005C69C /* Scripts */,
@@ -3444,6 +3452,7 @@
 			packageProductDependencies = (
 				F7FFB33328D8A58D00C31AA3 /* ExceptionCatcher */,
 				F730DFC32A99000D0051775C /* GeoJSON */,
+				F7B55C812BA34E8200E62B8E /* TileRepository */,
 			);
 			productName = "Marlin (iOS)";
 			productReference = F7A54CB22848149700E5F565 /* Marlin.app */;
@@ -3503,6 +3512,7 @@
 			packageReferences = (
 				F7FFB33228D8A58D00C31AA3 /* XCRemoteSwiftPackageReference "ExceptionCatcher" */,
 				F730DFC22A99000D0051775C /* XCRemoteSwiftPackageReference "GeoJSON" */,
+				F7E9902B2BA24953009B4E4F /* XCLocalSwiftPackageReference "DataSourceDefinition" */,
 			);
 			productRefGroup = F7A54CB32848149700E5F565 /* Products */;
 			projectDirPath = "";
@@ -4700,6 +4710,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		F7E9902B2BA24953009B4E4F /* XCLocalSwiftPackageReference "DataSourceDefinition" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DataSourceDefinition;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		F730DFC22A99000D0051775C /* XCRemoteSwiftPackageReference "GeoJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -4724,6 +4741,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F730DFC22A99000D0051775C /* XCRemoteSwiftPackageReference "GeoJSON" */;
 			productName = GeoJSON;
+		};
+		F7B55C812BA34E8200E62B8E /* TileRepository */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TileRepository;
 		};
 		F7FFB33328D8A58D00C31AA3 /* ExceptionCatcher */ = {
 			isa = XCSwiftPackageProductDependency;

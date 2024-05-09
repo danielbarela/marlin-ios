@@ -13,6 +13,7 @@ import Combine
 import CoreData
 import gars_ios
 import mgrs_ios
+import TileRepository
 
 protocol OverlayRenderable {
     var renderer: MKOverlayRenderer { get }
@@ -104,7 +105,7 @@ class MapState: ObservableObject, Hashable {
 
 class MainMapMixins: MapMixins {
     var subscriptions = Set<AnyCancellable>()
-    var asamRepository: TileRepository?
+    var asamRepository: TileRepository2?
     var moduRepository: TileRepository?
     var portRepository: TileRepository?
     var lightRepository: TileRepository?
@@ -133,10 +134,10 @@ class MainMapMixins: MapMixins {
         }
     }
 
-    func addAsamTileRepository(tileRepository: TileRepository) {
+    func addAsamTileRepository(tileRepository: TileRepository2) {
         if asamRepository == nil && UserDefaults.standard.dataSourceEnabled(DataSources.asam) {
             asamRepository = tileRepository
-            mixins.append(AsamMap(repository: tileRepository))
+            mixins.append(AsamMap2(repository: tileRepository))
         }
     }
 

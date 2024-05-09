@@ -6,28 +6,7 @@
 //
 
 import XCTest
-import Combine
-import CoreData
-import OHHTTPStubs
 
-@testable import Marlin
-
-final class AsamRepositoryTests: XCTestCase {
-
-    override func setUp() {
-        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
-        UserDefaults.registerMarlinDefaults()
-        
-        UserDefaults.standard.initialDataLoaded = false
-        UserDefaults.standard.clearLastSyncTimeSeconds(DataSources.asam)
-        UserDefaults.standard.lastLoadDate = Date(timeIntervalSince1970: 0)
-        
-        UserDefaults.standard.setValue(Date(), forKey: "forceReloadDate")
-    }
-    
-    override func tearDown() {
-    }
-    
     func testFetch() async {
         var asamModels: [AsamModel] = []
 
